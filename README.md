@@ -21,8 +21,14 @@ Use team performance metrics from past NFL seasons to predict which team is most
 ## 📁 Project Structure
 
 nfl-superbowl-predictor/
-├── data/ # Cleaned NFL data
-├── notebooks/ # Jupyter notebooks for analysis
-├── predictor.py # Final model & prediction code
-├── requirements.txt # Python dependencies
-└── README.md
+├── data-import/
+│   └── historical_team_stats.csv         # Output of scraper
+├── notebooks/
+│   └── 01_data_cleaning.ipynb
+│   └── 02_model_training.ipynb
+├── scripts/
+│   └── pfr_scraper.py                    # Scraper script
+├── predictor.py                          # Final model script
+├── requirements.txt
+├── README.md
+
