@@ -1,0 +1,53 @@
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+import time
+pip install pandas requests beautifulsoup4 lxml
+
+
+def clean_table(df):
+    df.columns = df.columns.str.replace(r'\n', '', regex=True)
+    df = df[df['Team'] != 'League Total']
+    df['Team'] = df['Team'].str.replace(r"\*", "", regex=True)
+    return df
+
+def scrape_year(year):
+    url = f'https://www.pro-football-reference.com/years/{year}/'
+    response = requests.get(url)
+    if not response.ok:
+        print(f"Failed to fetch {year}")
+        return None, None
+
+    soup = BeautifulSoup(response.text, 'html.parser')
+    
+    def get_table(table_id):
+        table = soup.find('table', id=table_id)
+        if not table:
+            print(f"Missing table {table_id} for {year}")
+            return None
+        df = pd.read_html(str(table))[0]
+        df = clean_table(df)
+        df['Year'] = year
+        return df
+
+    offense = get_table('team_stats')
+    defense = get_table('opponents')
+    return offense, defense
+
+all_data = []
+
+for year in range(2000, 2025):
+    print(f"Scraping {year}...")
+    offense_df, defense_df = scrape_year(year)
+    if offense_df is None or defense_df is None:
+        continue
+
+    merged = pd.merge(offense_df, defense_df, on=["Team", "Year"], suffixes=('_off', '_def'))
+    all_data.append(merged)
+    time.sleep(1.5)  # polite scraping
+
+# Combine all years into one DataFrame
+historical_df = pd.concat(all_data, ignore_index=True)
+historical_df.to_csv('historical_team_stats.csv', index=False)
+
+print("✅ Saved: historical_team_stats.csv")
