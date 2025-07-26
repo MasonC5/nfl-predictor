@@ -2,14 +2,14 @@
 
 # 🏈 NFL Super Bowl Predictor (2025–2026)
 
-Predict the Super Bowl champion using machine learning and historical NFL stats.
+Predict the Super Bowl champion using machine learning and historical NFL stats. 
 
-## 🎯 Goal
-Use team performance metrics from past NFL seasons to predict which team is most likely to win the Super Bowl in the 2025–2026 season.
+## What is the goal?
+To use team performance metrics from past NFL seasons to predict which team is most likely to win the Super Bowl in the 2025–2026 season.
 
 ---
 
-## 🧠 What’s Inside
+## How we found this
 
 - Data from Pro-Football-Reference and nflfastR
 - Feature engineering: win %, point differential, turnovers, etc.
@@ -18,17 +18,17 @@ Use team performance metrics from past NFL seasons to predict which team is most
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
-nfl-superbowl-predictor/
-├── data-import/
-│   └── historical_team_stats.csv         # Output of scraper
+nfl-predictor/
+├── data/
+│ ├── historical_team_stats.csv
+│ └── engineered_team_stats.csv
 ├── notebooks/
-│   └── 01_data_cleaning.ipynb
-│   └── 02_model_training.ipynb
+│ ├── 01_explore_data.ipynb
+│ └── 02_model_training.ipynb
 ├── scripts/
-│   └── pfr_scraper.py                    # Scraper script
-├── predictor.py                          # Final model script
-├── requirements.txt
+│ └── pfr_scraper.py
 ├── README.md
+├── requirements.txt
 
