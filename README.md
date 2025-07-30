@@ -22,13 +22,15 @@ To use team performance metrics from past NFL seasons to predict which team is m
 
 nfl-predictor/
 ├── data/
-│ ├── historical_team_stats.csv
+│ ├── offense_historical_team_stats.csv
+│ ├── defense_historical_team_stats.csv
 │ └── engineered_team_stats.csv
 ├── notebooks/
 │ ├── 01_explore_data.ipynb
 │ └── 02_model_training.ipynb
 ├── scripts/
-│ └── pfr_scraper.py
+│ ├── predict_winner.py
+│ └── feature_engineering.py
 ├── README.md
 ├── requirements.txt
 
