@@ -1,12 +1,27 @@
 # 🏈 NFL Super Bowl Predictor
 
-This project uses machine learning to predict NFL Super Bowl winners based on historical team performance metrics, and how these winners have scored statistically over time. It combines offensive and defensive stats, feature engineering, model training, and future forecasting for predictive insights.
+This project uses machine learning as a Random Forest Classifier Model to predict NFL Super Bowl winners based on historical team performance metrics, and how these winners have scored statistically. It combines offensive and defensive stats, feature engineering, model training, and future forecasting for predictive insights.
 
 ---
 
-# Current Top 5 Contenders Using my Predicted Stats
+# Current Top 5 Contenders Using my Predicted Stats (Preseason)
 
+I utilized ESPN's Mike Clay for the projections so far. I will update the stats using the pace of teams as weeks progress, starting soon after the regular season begins. Here is the order of contenders so far alongside their super bowl betting odds:
 
+Team                    Odds (DraftKings)
+
+Kansas City Chiefs      +850         
+San Francisco 49ers     +2000    
+Miami Dolphins          +9000
+Green Bay Packers       +2000
+Tampa Bay Buccaneers    +2800
+Houston Texans          +3500
+Cincinnati Bengals      +2200
+Dallas Cowboys          +5000
+Denver Broncos          +2800
+Los Angeles Chargers    +2800
+
+I AM NOT ADVISING TO BET THESE ODDS. I AM NOT A BETTING EXPERT, NOR DO I CLAIM TO BE. I MADE THIS JUST FOR FUN.
 
 ```
 
