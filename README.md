@@ -11,8 +11,8 @@ To use team performance metrics from past NFL seasons to predict which team is m
 
 ## How we found this
 
-- Data from Pro-Football-Reference and nflfastR
-- Feature engineering: win %, point differential, turnovers, etc.
+- Data from Pro-Football-Reference
+- Feature engineering: win %, point differential, turnovers, more advanced stats.
 - Machine Learning models: Logistic Regression, Random Forest, XGBoost
 - Model evaluation: accuracy, feature importance, ROC AUC
 
