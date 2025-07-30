@@ -8,18 +8,18 @@ This project uses machine learning as a Random Forest Classifier Model to predic
 
 Predictions based on ESPN's Mike Clay's projected team statistics. These will be updated as the season progresses based on pace and performance.
 
-Team                    Odds (DraftKings)
---------------------------------------------------
-Kansas City Chiefs      +850         
-San Francisco 49ers     +2000    
-Miami Dolphins          +9000
-Green Bay Packers       +2000
-Tampa Bay Buccaneers    +2800
-Houston Texans          +3500
-Cincinnati Bengals      +2200
-Dallas Cowboys          +5000
-Denver Broncos          +2800
-Los Angeles Chargers    +2800
+| Rank | Team                  | Odds (DraftKings) |
+|------|-----------------------|-------------------|
+| 1    | Kansas City Chiefs    | +850              |
+| 2    | San Francisco 49ers   | +2000             |
+| 3    | Miami Dolphins        | +9000             |
+| 4    | Green Bay Packers     | +2000             |
+| 5    | Tampa Bay Buccaneers  | +2800             |
+| 6    | Houston Texans        | +3500             |
+| 7    | Cincinnati Bengals    | +2200             |
+| 8    | Dallas Cowboys        | +5000             |
+| 9    | Denver Broncos        | +2800             |
+| 10   | Los Angeles Chargers  | +2800             |
 
 NOTE: DO NOT BET ON THESE JUST BECAUSE THE MODEL SAYS TO. I AM NOT A BETTING EXPERT, NOR DO I CLAIM TO BE.
 
