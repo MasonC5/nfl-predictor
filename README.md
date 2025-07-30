@@ -4,12 +4,12 @@ This project uses machine learning as a Random Forest Classifier Model to predic
 
 ---
 
-# Current Top 5 Contenders Using my Predicted Stats (Preseason)
+# Current Top 10 Contenders Using Predicted Stats (Preseason)
 
-I utilized ESPN's Mike Clay for the projections so far. I will update the stats using the pace of teams as weeks progress, starting soon after the regular season begins. Here is the order of contenders so far alongside their super bowl betting odds:
+Predictions based on ESPN's Mike Clay's projected team statistics. These will be updated as the season progresses based on pace and performance.
 
 Team                    Odds (DraftKings)
-
+--------------------------------------------------
 Kansas City Chiefs      +850         
 San Francisco 49ers     +2000    
 Miami Dolphins          +9000
@@ -21,7 +21,7 @@ Dallas Cowboys          +5000
 Denver Broncos          +2800
 Los Angeles Chargers    +2800
 
-I AM NOT ADVISING TO BET THESE ODDS. I AM NOT A BETTING EXPERT, NOR DO I CLAIM TO BE. I MADE THIS JUST FOR FUN.
+NOTE: DO NOT BET ON THESE JUST BECAUSE THE MODEL SAYS TO. I AM NOT A BETTING EXPERT, NOR DO I CLAIM TO BE.
 
 ```
 
