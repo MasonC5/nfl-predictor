@@ -13,7 +13,7 @@ y = df['Won_SB']
 model = RandomForestClassifier(n_estimators=100, random_state=42)
 model.fit(X, y)
 
-# Fake 2025 data input (replace with real later)
+# 2025 example data input (replace with real later)
 example_team = pd.DataFrame([{
     'Point_Diff': 120,
     'Yard_Diff': 500,
